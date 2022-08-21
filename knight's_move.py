@@ -66,4 +66,4 @@ while parent is not None:
     parent = parents[parent]
 
 # Вывод расстояния
-print(path[::-1])
+print('Траектория шахматной фигуры - ', *path[::-1])

@@ -11,5 +11,4 @@ soup = BeautifulSoup(html, 'html.parser') # делаем суп
 sum = 0
 for tag in soup.find_all('td'):
     sum += int(tag.string)
-print(soup)
-print(sum)
+print('Сумма -', sum)

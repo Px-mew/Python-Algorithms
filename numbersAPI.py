@@ -16,16 +16,14 @@ http://numbersapi.com/999/math?json=true
 import requests
 import json
 
-f = open("dataset_24476_3.txt", "r")
-for line in f:
-    line = line.rstrip()
-    num = int(line)
+numbers = [930, 997, 903, 905, 908, 974, 911, 912, 926, 980, 949, 982, 918, 990, 959]
+
+for num in numbers:
     template = 'http://numbersapi.com/{}/math?json=true'
     res = requests.get(template.format(num))
     data_json = res.text
     data_again = json.loads(data_json)
     if data_again["found"]:
-        print("Interesting")
+        print(num, "Interesting")
     else:
-        print("Boring")
-f.close()
+        print(num, "Boring")

@@ -17,6 +17,7 @@ while "<code>" in s:
         max = list_text[s[s.find("<code>")+6:s.find("</code>")]]
     s = s[s.find("</code>")+7::]
 
+print("Слова, которые встречаются чаще всего:")
 for key in list_text:
     if list_text[key] == max:
         print(key)

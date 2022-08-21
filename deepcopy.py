@@ -1,7 +1,6 @@
+"""    Не используя метод deepcopy скопируйте всё содержимое списка L1 в L2.    """
+
 def list_pull(L, res):
-    """
-    Не используя метод deepcopy скопируйте всё содержимое списка L1 в L2.
-    """
     res = L[:]
     for i in range(len(L)):
         if type(L[i]) == list:
