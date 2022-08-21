@@ -20,6 +20,7 @@ for row in range(1, 9):
     if mx < salary_by_region[row-1][3]:
         mx = salary_by_region[row-1][3]
         imx = row
+print("Регион с самой высокой медианной зарплатой - ", end='')
 print(sh.row_values(imx)[0])
 
 
@@ -32,5 +33,5 @@ for i in range(0, 7):
     if sum(salary_by_profi[i][1:])/8 > avg_mx:
         avg_mx = sum(salary_by_profi[i][1:])/8
         avg_mx_profi = salary_by_profi[i][0]
-
+print("Профессия с самой высокой средней зарплатой по всем регионам - ", end='')
 print(avg_mx_profi)
