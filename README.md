@@ -26,9 +26,6 @@
 ### Introduction_to_spreadsheets.py
 Работа с данными в Excel.
 
-### Kaprekar's_constant.py
-Определение числа Капрекара в разных системах счисления.
-
 ### knight's_move.py
 Определение траектории шахматного коня. Обход графа.
 
